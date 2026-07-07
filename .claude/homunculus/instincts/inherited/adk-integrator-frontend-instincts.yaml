@@ -1,0 +1,318 @@
+# Instincts generated from https://github.com/reevesc88/adk-integrator-frontend
+# Generated: 2026-07-07T15:57:11.851Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: adk-integrator-frontend-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: feat
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: feat: wire CodeRabbit + Copilot review bots
+
+---
+id: adk-integrator-frontend-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Commit Length
+
+## Action
+
+Keep commit messages concise (~43 characters)
+
+## Evidence
+
+- Average commit message length: 43 chars
+- Based on 1 commits
+
+---
+id: adk-integrator-frontend-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Naming Files
+
+## Action
+
+Use kebab-case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: kebab-case
+
+---
+id: adk-integrator-frontend-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: adk-integrator-frontend-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: adk-integrator-frontend-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: adk-integrator-frontend-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct File Naming
+
+## Action
+
+Name the file using kebab-case
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: adk-integrator-frontend-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: adk-integrator-frontend-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: adk-integrator-frontend-instinct-constant-naming
+trigger: "When defining a new constant"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: adk-integrator-frontend-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: adk-integrator-frontend-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: adk-integrator-frontend-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: adk-integrator-frontend-instinct-git-commit-format
+trigger: "When writing a commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Git Commit Format
+
+## Action
+
+Use the Conventional Commits format with a 'feat' prefix for features
+
+## Evidence
+
+- Pattern in commits.type and commits.prefixes
+- Example: 'feat: wire CodeRabbit + Copilot review bots'
+
+---
+id: adk-integrator-frontend-instinct-coderabbit-workflow
+trigger: "When configuring CI/CD workflows"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Coderabbit Workflow
+
+## Action
+
+Include .github/workflows/coderabbit-trigger.yml for CodeRabbit integration
+
+## Evidence
+
+- Presence of .github/workflows/coderabbit-trigger.yml
+
+---
+id: adk-integrator-frontend-instinct-copilot-workflow
+trigger: "When configuring CI/CD workflows"
+confidence: 0.8
+domain: workflow
+source: repo-analysis
+source_repo: reevesc88/adk-integrator-frontend
+---
+
+# Adk Integrator Frontend Instinct Copilot Workflow
+
+## Action
+
+Include .github/workflows/copilot-review.yml for Copilot review integration
+
+## Evidence
+
+- Presence of .github/workflows/copilot-review.yml
+
